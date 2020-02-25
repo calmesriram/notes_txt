@@ -1,0 +1,4 @@
+
+1. node.js => https://www.youtube.com/watch?v=2jqok-WgelI
+
+2. @hapi/joi => for schema validation  
