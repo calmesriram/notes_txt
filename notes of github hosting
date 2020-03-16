@@ -1,0 +1,44 @@
+github hosting in angular 
+_____________________________
+
+link  => https://dzone.com/articles/how-to-deploy-an-angular-application-to-github
+
+notes  This is working....
+=========================
+
+To deploy Angular application first create a repository on GitHub. To do that navigate to https://github.com/  and click on New Repository.  I am creating a repository named  “demo9“.  
+
+ After the repository is created, use git command to add this repository as remote to the local project. For that run command as below :
+
+git remote add origin https://github.com/USERNAME/PROJECT_NAME.git
+
+Do not forget to change username and project name. Once the remote repository is added, you can verify that using the command
+
+git remote -v
+
+As output, you should get repository listed as below:
+
+ 
+
+Step 5
+To deploy the Angular application to GitHub, you need to first install the angular-cli-ghpages globally:
+
+ npm install -g angular-cli-ghpages
+
+ After installing that ghpages, use Angular CLI to build the project. For that run command as shown below:
+
+ng build --prod --base-href https://debugmodedotnet.github.io/demo9/
+
+Make sure that you are using your GitHub username and repository name.  After successful execution of the command, you should get bundle.js created as shown in the image below: 
+
+ 
+
+As the last step, run command ngh –no-silent to publish the application as shown in the image below:
+
+or 
+
+run sudo ngh –no-silent
+
+ 
+
+After successful publish navigate to  https://<username>.github.io/<reponame>/ to navigate to the application.  This is all you need to do to deploy the Angular application to GitHub.
