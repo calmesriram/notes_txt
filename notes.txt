@@ -3,4 +3,5 @@
 
 2. @hapi/joi => for schema validation  
 
+3. https://raw.githack.com/ => converts js file to cdn via github (instant host)
 
